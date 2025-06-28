@@ -12,7 +12,7 @@ Fully supports both linux and windows machines.
 3. Open the file:
   **Windows:** C:\Users\<användarnamn>\AppData\Roaming\Synkzone Desktop\config.json
   **Linux:** Home/.config/Synkzone Desktop/config.json
-4. Change "sz-backend-options": "" -> ```"sz-backend-options": "[\"-Dcom.synkzone.storage.data.displayTransferPanel=false\",\"-DmaxStorageSpace=3500000000\",\"-Dquarkus.http.cors=true\",\"-Dquarkus.http.cors.origins=*\",\"-Dquarkus.http.cors.access-control-allow-credentials=true\"]",``
+4. Change "sz-backend-options": "" -> "sz-backend-options": "[\"-Dcom.synkzone.storage.data.displayTransferPanel=false\",\"-DmaxStorageSpace=3500000000\",\"-Dquarkus.http.cors=true\",\"-Dquarkus.http.cors.origins=*\",\"-Dquarkus.http.cors.access-control-allow-credentials=true\"]",
 
 ## How to Download:
 1. Go to releases and download the latest release.
