@@ -10,7 +10,7 @@
 3. Make sure restricted mode is off
 4. Click on the folder to open the obsidian plugins folder. 
 5. Move the Synkzone plugin folder into the obsidian plugin folder.
-6. unzip the file
+6. Unzip the file
 7. Go back to obsidian and refresh the plugins + click enable on the plugin.
 
 ## How to Start:
