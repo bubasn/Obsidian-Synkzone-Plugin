@@ -34,7 +34,7 @@ Before installing the plugin, ensure the following:
 
 ## ⬇️ Installation
 
-1. Go to the [Releases](#) section and download the latest `.zip` release.
+1. Go to the [Releases](#V1.0.0) section and download the latest `.zip` release.
 2. In Obsidian:
    - Open `Settings → Community plugins`
    - Turn off **Restricted mode**
