@@ -1,28 +1,70 @@
-Fully supports both linux and windows machines.
+# Synkzone Obsidian Plugin
 
-# Main Features:
-* See sync status in the lower right corner when using obsidian
-* Select target zone using a dropdown list
-* Manually refresh sync check using a button on the left pane
-* **For developers:** Toggle logging for in-depth troubleshooting in the obsidian console (CTRL + SHIFT + i)
+A plugin that fully supports **Linux** and **Windows** for integrating Synkzone functionality directly into Obsidian.
 
-## Before downloading:
-1. Ensure you have the Synkzone desktop client downloaded on your computer.
-2. Shutdown the Synkzone desktop client.
-3. Open the file:
-  **Windows:** C:\Users\<användarnamn>\AppData\Roaming\Synkzone Desktop\config.json
-  **Linux:** Home/.config/Synkzone Desktop/config.json
-4. Change "sz-backend-options": "" -> "sz-backend-options": "[\"-Dcom.synkzone.storage.data.displayTransferPanel=false\",\"-DmaxStorageSpace=3500000000\",\"-Dquarkus.http.cors=true\",\"-Dquarkus.http.cors.origins=*\",\"-Dquarkus.http.cors.access-control-allow-credentials=true\"]",
+## 🔧 Main Features
 
-## How to Download:
-1. Go to releases and download the latest release.
-2. Open Obsidian -> Settings -> Community plugins
-3. Make sure restricted mode is off
-4. Click on the folder to open the obsidian plugins folder. 
-5. Move the Synkzone plugin folder into the obsidian plugin folder.
-6. Unzip the file
-7. Go back to obsidian and refresh the plugins + click enable on the plugin.
+- ✅ Display sync status in the bottom-right corner of Obsidian  
+- ✅ Select your target zone using a dropdown menu  
+- ✅ Manually refresh sync status with a button in the left ribbon  
+- ✅ **Developer Mode**: Enable detailed logging in the console (`Ctrl + Shift + I`)
 
-## How to Start:
-1. After downloading, go to community plugins -> go to settings for the synkzone plugin. 
-2. Configure the API port for your client and select which zone to target (Which zone obsidian uses)
+---
+
+## ⚠️ Prerequisites
+
+Before installing the plugin, ensure the following:
+
+1. You have the **Synkzone Desktop Client** installed.
+2. You **shut down the Synkzone Desktop Client** before editing configuration files.
+3. Locate and open your `config.json` file:
+   ```text
+   Windows: C:\Users\<your-username>\AppData\Roaming\Synkzone Desktop\config.json
+   Linux:   ~/.config/Synkzone Desktop/config.json
+4. Modify the `sz-backend-options` field as follows:
+
+   ```json
+   "sz-backend-options": [
+     "-Dcom.synkzone.storage.data.displayTransferPanel=false",
+     "-DmaxStorageSpace=3500000000",
+     "-Dquarkus.http.cors=true",
+     "-Dquarkus.http.cors.origins=*",
+     "-Dquarkus.http.cors.access-control-allow-credentials=true"
+   ]
+
+## ⬇️ Installation
+
+1. Go to the [Releases](#) section and download the latest `.zip` release.
+2. In Obsidian:
+   - Open `Settings → Community plugins`
+   - Turn off **Restricted mode**
+3. Click **"Open plugins folder"**.
+4. Move the **unzipped Synkzone plugin folder** into the opened folder.
+5. Return to Obsidian:
+   - Click **"Reload plugins"**
+   - Enable the **Synkzone** plugin
+
+## 🚀 Getting Started
+
+1. In Obsidian, go to:  
+   `Settings → Community plugins → Synkzone Plugin`
+2. Configure the plugin:
+   - **API Port** for your Synkzone client
+   - **Target Zone** that Obsidian should sync with
+
+## 🛠 Developer Options
+
+- Toggle **Developer Logging** in the plugin settings.
+- When enabled, internal logs will appear in the **Developer Console**.
+- Open the console with: `Ctrl + Shift + I`.
+
+## ✅ Compatibility
+
+- **Operating Systems:**
+  - Windows
+  - Linux
+
+## 🙋 Support
+
+Have questions or issues? Please [open an issue](../../issues) in this repository.
+
